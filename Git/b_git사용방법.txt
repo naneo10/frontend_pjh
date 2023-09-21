@@ -60,11 +60,52 @@ git push -u origin main
 - 로컬 저장도 변경사항은 깃허브 메인저장소에 전달하는 명령어
 
 4. 폴더의 업데이트 내용을 깃허브에 올리기
-  특정 파일/폴더 스테이징
+  4.0 현재 working derectory와 staging area의 상태를 확인!
+  : git status
+  4.1 특정 파일/폴더 스테이징
   > git add fileName.txt(파일명.확장자 / 폴더명)
 
   모든 변경 파일 스테이징
   > git add .
 
-  > git commit
-  > git push
+  4.2 변경사항 커밋(저장)
+  > git commit -m "커밋 메시지 작성"
+  커밋 메시지: 20230921 pjh git학습내용 저장
+
+  4.3 로컬 리포지토리 변경 내용을 원격 리포지토리에 업로드
+  > git push origin main
+
+  // 생성된 github 리포지토리의  데이터를 다운로드 하는 법 //
+  1. git init
+  : 새로운 git 리포지토리를 초기화하거나
+    기존 디렉토리를 git 리포지토리로 변환
+
+  2. branch명 변경
+  : git branch -M main
+
+  3. git remote add origin 생성된 깃허브 리포지토리 주소
+  : 주소 잘못 입력 시 해당 폴더 안 'git'폴더 삭제 후 1.부터 다시
+
+  4. git pull origin main
+
+  // 같은 리포지토리의 2개 이상의 환경에서 업로드 할 경우 //
+  1. 학원 작업물 push
+
+  2. 집에서 학원 작업물을 pull
+
+  3. 집에서 작업
+
+  4. 집 작업물 push
+  
+  5. 학원에서 집 작업물을 pull 하고나서 작업
+
+  // 5의 과정을 거치지 않은 경우 //
+  학원에서 push하기 전에 add와 commit을 진행하고 push이전에
+  git pull origin main을 진행한 뒤에
+  git push origin main으로 학원의 작업을 업로드
+
+  git status
+  git add .
+  git commit -m ""
+  git pull origin main
+  git push origin main
