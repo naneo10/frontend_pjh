@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 태그 복습</title>
+</head>
+<style>
+  h1, h2{
+    color:blue;
+  }
+</style>
+<body>
+  <!-- 시맨틱 태그
+    header, main, footer
+    header태그: h1태그, nave태그(5개의 a태그)
+    main태그: 6개의 section
+      section_01: img 3개(practice폴더 내에 images 폴더)
+      section_02: about us (h2, p태그)
+      section_03: Mission statment (h2, p태그)
+      section_04: Services (h2, 순서가 있는 태그)
+      section_05: Our team (h2, 순서가 없는 태그, img태그)
+      section_06: contact us (h2, p, a태그)
+    footer태그: p, a태그
+    vertical 바 (| : shift+\)
+  -->
+  <header>
+    <h1>웹 프론트앤드의 시작</h1>
+    <nav>
+      <!-- a태그 수신처에 '#'입력 시, 해당 웹 문서 주소 그대로를 사용 -->
+      <a href="#">home</a> |
+      <a href="#">about</a> |
+      <a href="#">service</a> |
+      <a href="#">team</a> |
+      <a href="#">contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <img src="/0915/practice/images/free-icon-bird-3338342.png" width="100px" height="100px" alt="slide1"/>
+      <img src="/0915/practice/images/free-icon-bird-3338342.png" width="100px" height="100px" alt="slide2"/>
+      <img src="/0915/practice/images/free-icon-bird-3338342.png" width="100px" height="100px" alt="slide3"/>
+    </section>
+    <section>
+      <h2>About Us</h2>
+      <p>we are a leading company in our industry</p>
+    </section>
+    <section>
+      <h2>Mission statment</h2>
+      <p>to provide the best service to our clients</p>
+    </section>
+    <section>
+      <h2>Services</h2>
+      <ol type="A">
+        <li>Service1</li>
+        <li>Service2</li>
+        <li>Service3</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Our Team</h2>
+      <ul>
+        <li>
+          <img src="/0915/practice/images/free-icon-html5-1216733.png" width="50px" height="50px" alt="team1"/> Name1, Position 1
+        </li>
+        <li>
+          <img src="/0915/practice/images/free-icon-package-box-2900376.png" width="50px" height="50px" alt="team2"/> Name2, Position 2
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact Us</h2>
+      <p>Address: 123 Main St, City, State</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: <a href="mailto:info#compnay.com">info@company.com</a></p>
+    </section>
+  </main>
+  <footer>
+    <!-- &: 엠퍼샌드 -->
+    <p>&copy; 2023 compnay Name</p>
+    <p>
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>
