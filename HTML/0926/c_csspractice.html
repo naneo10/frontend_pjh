@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타일 시트 적용 예제</title>
+  <style>
+    h2{
+      color: pink;
+    }
+  </style>
+  <link rel="stylesheet" href="/css/c_cssStylepractice.css" />
+  <!-- 
+    link 적용 시 폴더 구조에 따른 수신처 작성법
+    1. 동일한 폴더 내의 파일
+    : 파일명.확장자
+    2. 동일한 폴더 내의 하위 폴더에 존재하는 파일
+    : 폴더명/파일명.확장자
+    3. 상위 폴더 내의 파일
+    : ../파일명.확장자
+    4. 상위 폴더 내의 다른 폴더 내의 파일
+    : ../폴더명/파일명/확장자
+  -->
+</head>
+<body>
+  <h1>웹사이트 제목</h1>
+  <header>
+    <ul>
+      <li><a href="#">메뉴 1</a></li>
+      <li><a href="#">메뉴 2</a></li>
+      <li><a href="#">메뉴 3</a></li>
+    </ul>
+  </header>
+  <main>
+    <h2>섹션 제목</h2>
+    <section>
+      <h3>글 제목</h3>
+      <p>본문 내용</p>
+    </section>
+    <section>
+      <h3>글 제목</h3>
+      <p>본문 내용</p>
+    </section>
+  </main>
+  <footer>
+    <p>저작권 2023. 모든 권리 보유.</p>
+  </footer>
+</body>
+</html>
