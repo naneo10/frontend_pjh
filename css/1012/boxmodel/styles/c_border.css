@@ -63,5 +63,21 @@ c: 하단(bottom)
 : 값이 하나 뿐이면 가로 세로 똑같이 30px 크기로 라운딩
 */
 .round1 {
-  border-
+  border-radius: 20px;
+}
+
+.round2 {
+  border-radius: 50px 30px 30px 50px;
+}
+
+.round3 {
+  border-radius: 0 30% 30% 50%;
+}
+
+.round4 {
+  border-radius: 50px 30px 30px 0;
+}
+
+.round5 {
+  border-radius: 0 0 0 30px;
 }
