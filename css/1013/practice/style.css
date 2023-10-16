@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background-color: rgb(240,240,240);
+  color: rgb(77,77,78);
+}
+
+nav {
+  background-color: rgb(86,85,85);
+}
+
+nav div {
+  display: inline-block;
+}
+
+h4 {
+  color: rgb(239,124,84);
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+table, th, td {
+  border-bottom: 1px solid rgb(221,221,221);
+  border-collapse: collapse;
+}
+
+label, input {
+  display: block;
+}
+
+/* input[name = agree] {
+  display: inline-block;
+  margin: 0 auto;
+} */
+
+/* 누락 코드
+  1. 표 전체 페이지 100% 비중, 각 셀 비중 50%
+  2. input태그 fieldset 박스 안 100% 비중
+  3. input type="radio" 중앙정렬
+  4. textarea fieldset 박스 안 100% 비중
+  5. input type="submit" fieldset 박스 안 100% 비중
+*/

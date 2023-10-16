@@ -7,6 +7,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <!-- Header -->
+  <header>
+    <h4>Welcome to My Website</h4>
+    <nav>
+      <div><a href="#">Section 1</a></div>
+      <div><a href="#">Section 2</a></div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <section>
+    <p class="bold">Section 1</p>
+    <table>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+      </tr>
+    </table>
+    <img src="images/image.png" width="75px" alt="image" />
+  </section>
+
+  <section>
+    <p class="bold">Section 2</p>
+    <img src="#" alt="Example image">
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" autofocus required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <p>Do you like this form?</p>
+        <input type="radio" id="yes" name="agree" value="yes" />
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="agree" value="no" />
+        <label for="no">No</label>
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" cols="30" rows="2" required ></textarea>
+
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+  </section>
+
 </body>
 </html>
