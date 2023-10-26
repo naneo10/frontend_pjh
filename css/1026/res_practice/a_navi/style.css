@@ -1,0 +1,25 @@
+.responsive-nav ul {
+  list-style: none;
+  padding: 0;
+  background-color: #333;
+  text-align: center;
+  border-bottom: #eee;
+}
+
+.responsive-nav li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.responsive-nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .responsive-nav {
+    display: block;
+    margin: 0;
+  }
+}
