@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 900px) {
   .image {
     width: 33.33%;
   }
