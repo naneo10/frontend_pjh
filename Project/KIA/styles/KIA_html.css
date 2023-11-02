@@ -61,6 +61,7 @@ p {
 }
 
 #menu_bottom {
+  width: auto;
   position: relative;
 }
 
@@ -69,6 +70,7 @@ p {
   height: 400px;
   background-image: url(../images/gnb_bg.png);
   background-repeat: no-repeat;
+  background
 }
 
 .menu ul {
@@ -108,11 +110,11 @@ p {
 }
 
 .menu:hover .hidden {
-  display: block;
+  display: flex;
 }
 
 .menu:hover .hidden_img {
-  display: block;
+  display: flex;
 }
 
 #left_content_box {
