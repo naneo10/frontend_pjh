@@ -3,7 +3,7 @@
 document.getElementById('predict-button').addEventListener('click', function() {
   //results 객체
   //:LG와 KT 각각의 승리 횟수를 추적
-  let results = ('LG' : 0, 'KT' : 0);
+  let results = {'LG' : 0, 'KT' : 0};
   //최대 게임 횟수를 저장하는 변수
   //7전 4선승제 >> 최대 7경기
   let maxGames = 7;
@@ -18,7 +18,7 @@ document.getElementById('predict-button').addEventListener('click', function() {
     //Math.random() 함수
     //:0과 1사이의 난수를 생성하고, 난수를 기반으로 승자를 결정
     //0.5 미만일 경우 LG 승리, 그렇지 않으면 KT의 승리로 처리
-    let windder = Math.random() < 0.5 ? 'LG' : 'KT';
+    let winner = Math.random() < 0.5 ? 'LG' : 'KT';
     //결정된 승자의 승리 횟수를 1 증가
     results[winner]++;
     //진행된 게임의 수를 1 증가
