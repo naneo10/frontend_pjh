@@ -25,13 +25,15 @@ let str1 = 'hello';
 let str2 = "hello";
 let str3 = `hello, world`;
 
-//템플릿 문자열
-//:백틱을 사용하여 정의, 문자열 내에서 변수나 표현식을 '${}' 안에 넣어 사용할 수 있도록 하는 문자열
+//*템플릿 문자열
+//*:백틱을 사용하여 정의, 문자열 내에서 변수나 표현식을 '${}' 안에 넣어 사용할 수 있도록 하는 문자열
 
 //변수 삽입
-let name = "홍길동";
-let greeting = `안녕하세요 $(name)님`;
+let name = '홍길동';
+// let name = prompt('이름 입력');
+let greeting = `안녕하세요 ${name}님`;
 console.log(greeting);
+document.write(greeting);
 
 //표현식 삽입
 let num1 = 10;
@@ -44,6 +46,7 @@ let multiLine = `이것은 여러 줄 문자열입니다
 두 번째 줄입니다
 세 번째 줄입니다`;
 console.log(multiLine);
+document.write(multiLine); //^'콘솔 로그'에서만 변경된 줄 적용
 
 //? 논리형 (Boolean)
 //:참(true) | 거짓(false) 값만을 가지는 자료형
@@ -53,6 +56,7 @@ console.log(typeof bool) //boolean
 
 bool = true;
 console.log(bool);
+console.log(typeof bool); //^string 'X'
 
 //? null & undefined 자료형
 
@@ -74,6 +78,9 @@ console.log(hello); // undefined
 //String()함수 | toString()메소드를 사용
 let numberToString = String(123);
 console.log(typeof numberToString);
+
+let test = 'example'; //example 문자만 입력 시, 정의되지 않음
+console.log(typeof test);
 
 //숫자형으로 변환
 //Nuber()함수
