@@ -65,8 +65,9 @@ p {
   position: relative;
 }
 
+/*^드랍다운 높이 지정 */
 #menu_bottom_img {
-  width: auto;
+  width: 100%;
   height: 400px;
   background-image: url(../images/gnb_bg.png);
   background-repeat: no-repeat;
@@ -103,9 +104,12 @@ p {
   z-index: 2;
 }
 
+/*^드랍다운 높이 지정*/
 .hidden_img {
   display: none;
   position: absolute;
+  width: 100%;
+  height: 400px;
   z-index: 1;
 }
 
