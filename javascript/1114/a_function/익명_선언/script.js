@@ -11,7 +11,7 @@
 let anonymous;
 
 anonymous = function() {
-  console.log('1번 재 익명 함수입니다.');
+  console.log('1번 째 익명 함수입니다.');
 }
 anonymous = function() {
   console.log('2번 째 익명 함수입니다.');
