@@ -88,7 +88,7 @@ git push -u origin main
 
   4. git pull origin main
 
-  // 같은 리포지토리git의 2개 이상의 환경에서 업로드 할 경우 //
+  // 같은 리포지토리의 2개 이상의 환경에서 업로드 할 경우 //
   1. 학원 작업물 push
 
   2. 집에서 학원 작업물을 pull
