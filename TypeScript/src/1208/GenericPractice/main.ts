@@ -12,41 +12,73 @@
   class TaskManager<T> {
     //?맴버 변수 지정 : private 설정
     //할 일 목록을 지정하는 배열(tasks)
-    private tasks: T[] = [];
+    private tasks: Task<T>[];
     //다음 할 일의 고유 ID(nextId)
-    private nextId: number[] = [];
+    private nextId: number;
 
     //?생성자
-    constructor(private id: number, private content: T) {
-      this.id = id;
-      this.content = content;
+    constructor() {
+      this.tasks = [];
+      this.nextId = 1;
     }
     //초기 할 일 목록은 비어 있음
     //ID는 1부터 시작
 
     //?할 일 추가 함수(push)
-    addTasks(task: T) {
-      this.tasks.push(task);
+    addTask(content: T): void {
+      this.tasks.push({ id: this.nextId, content }); //새 할 일을 목록 추가
+      //다음 ID 증가
+      this.nextId++;
     }
 
     //?할 일 제거 함수(filter)
-    // removeTasks(content: T) {
-    //   const removetask = this.tasks.filter((task) => task.content === content);
-    //   if (removetask !== -1) {
-    //     this.tasks.splice(removetask, 1);
-    //   }
-    // }
+    removeTask(id: number): void {
+      //지정된 ID의 할 일을 목록에서 제거
+      //인수로 받아오는 id를 가진 요소만 제외한 새로운 배열로 할당
+      this.tasks = this.tasks.filter((task) => task.id !== id);
+      //변경된 목록을 다시 렌더링
+      this.renderTasks("task-list");
+    }
 
     //?할 일 목록을 화면에 렌더링하는 함수(forEach)
-    // forEachTasks(): T[] {
-    //   return this.tasks.forEach((task) => task.length);
-    // }
+    renderTasks(containerId: string): void {
+      const container = document.getElementById(
+        containerId
+      ) as HTMLUListElement;
+      container.innerHTML = ""; //기본 목록을 비움
+      this.tasks.forEach((task) => {
+        //새로운 목록 항목 생성
+        const li = document.createElement("li");
+        //항목에 내용 추가
+        li.textContent = `${task.content}`;
+
+        //삭제 버튼 생성
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "삭제";
+        deleteButton.onclick = () => {
+          this.removeTask(task.id);
+        };
+        //항목을 컨테이너에 추가
+        li.appendChild(deleteButton);
+        container.appendChild(li);
+      });
+    }
   }
 
   //웹 페이지가 로드될 때 실행되는 함수
-  //?
+  window.onload = () => {
+    const taskManager = new TaskManager<string>(); //문자열 타입의 할 일 관리자 생성
+    const addButton = document.getElementById("add-task") as HTMLButtonElement;
+    const newTaskInput = document.getElementById(
+      "new-task"
+    ) as HTMLInputElement;
+    const taskList = document.getElementById("task-list");
 
-  //?Test
-  let alive = TaskManager<string>;
-  console.log(alive);
+    addButton.onclick = () => {
+      //입력된 값을 할 일로 추가
+      taskManager.addTask(newTaskInput.value);
+      //할 일 목록을 화면에 렌더링
+      // taskManager.rederTask();
+    };
+  };
 }
