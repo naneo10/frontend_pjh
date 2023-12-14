@@ -19,14 +19,15 @@
     //?생성자
     constructor() {
       this.tasks = [];
+      //초기 할 일 목록은 비어 있음
+      //ID는 1부터 시작
       this.nextId = 1;
     }
-    //초기 할 일 목록은 비어 있음
-    //ID는 1부터 시작
 
     //?할 일 추가 함수(push)
     addTask(content: T): void {
-      this.tasks.push({ id: this.nextId, content }); //새 할 일을 목록 추가
+      //새 할 일을 목록 추가
+      this.tasks.push({ id: this.nextId, content });
       //다음 ID 증가
       this.nextId++;
     }
@@ -78,7 +79,9 @@
       //입력된 값을 할 일로 추가
       taskManager.addTask(newTaskInput.value);
       //할 일 목록을 화면에 렌더링
-      // taskManager.rederTask();
+      taskManager.renderTasks("task-list");
+      //입력 필드 초기화
+      newTaskInput.value = "";
     };
   };
 }
