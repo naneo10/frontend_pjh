@@ -25,7 +25,7 @@
   let person = { Tom: 25, Jerry: 30, spike: 28 };
   let foundName = "";
 
-  //person 객체의 모든 키(이름)를 베열 형태로 저장
+  //person 객체의 모든 키(이름)를 배열 형태로 저장
   let keys = Object.keys(person);
   for (let i = 0; i < keys.length; i++) {
     //person[keys[i]] : 현재 키에 해당하는 사람의 나이

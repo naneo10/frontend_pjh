@@ -1,26 +1,72 @@
 /*! 전체 페이지에 적용되는 기본 스타일  */
 /* 배경색, 전체 페이지 내부 여백, 기본 텍스트 색상(#333) */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  color: #333;
+}
 
 /*! 폼에 적용되는 스타일 */
 /* 배경색(흰색), 폼 내부 여백, 테두리(둥글게), 상자 그림자 효과 */
+form {
+  background-color: #fff;
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 /*! 각 질문에 적용되는 스타일 */
 /* 질문 사이의 하단 여백, 기본적으로 질문 숨김(보이지 않도록 설정) */
+.question {
+  margin-bottom: 20px;
+  display: none;
+}
 
 /*! 활성화된 질문에 적용되는 스타일 */
 /* 활성화된 질문은 보이도록 설정 */
+.question.active {
+  display: block;
+}
 
 /*! 질문 내용에 적용되는 스타일 */
 /* 글꼴 크기, 문단 하단 여백 설정 */
+.question p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
 /*! 라디오 버튼에 적용되는 스타일 */
 /* 라디오 버튼 우측 여백 */
+input[type="radio"] {
+  margin-right: 10px;
+}
 
 /*! 일반 버튼에 적용되는 스타일 */
 /* 배경색, 내부 여백, 테두리(없앰), 테두리(둥글게), 마우스 커서 포인터, 글꼴 크기 */
+button {
+  background-color: #ffe4a4;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
 /*! 제출 버튼에 적용되는 스타일 */
 /* 배경색, 텍스트 색상(흰색), 내부 여백 설정, 테두리(없앰), 테두리(둥글게), 마우스 커서 포인터, 글꼴 크기 */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
 /*! 제출 버튼에 마우스를 올렸을 때 적용되는 스타일 */
 /* 배경색 변경(짙은색) */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}

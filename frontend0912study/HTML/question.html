@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>상호작용적인 설문조사 폼 만들기</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!--  
@@ -31,5 +32,26 @@
     - 이전과 다음 버튼 생성
     - 마지막 질문에는 제출 버튼을 생성
   -->
+  <form id="surveyForm">
+    <div class="question active">
+      <p>질문 1: 당신의 취미는 무엇인가요?</p>
+      <input type="radio" name="q1" value="스포츠" />스포츠 <br />
+      <input type="radio" name="q1" value="독서" />독서 <br />
+      <input type="radio" name="q1" value="여행" />여행 <br />
+    </div>
+
+    <div class="question">
+      <p>질문 2: 좋아하는 음식은 무엇인가요?</p>
+      <input type="radio" name="q1" value="한식" />한식 <br />
+      <input type="radio" name="q1" value="양식" />양식 <br />
+      <input type="radio" name="q1" value="중식" />중식 <br />
+    </div>
+
+    <button type="button" id="prevBtn" style="display: none;">이전</button>
+    <button type="button" id="nextBtn">다음</button>
+    <input type="submit" value="제출" style="display: none;" />
+  </form>
+
+  <script src="main.js"></script>
 </body>
 </html>
