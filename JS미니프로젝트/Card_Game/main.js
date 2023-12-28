@@ -6,7 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const completedButton = document.getElementById("completed-button");
 
   //!색상 배열을 정의
-  const colors = ["black", "red", "yellow", "pink", "orange", "brown"];
+  const colors = [
+    "#cc3131",
+    "#e2ddbb",
+    "#23b923",
+    "#34bcbc",
+    "#3939db",
+    "#e5b7e4",
+  ];
 
   //!colors 배열의 색상들을 복제하여 새로운 배열 cardColors를 생성
   //:...연산자를 사용하여 모든 요소를 새 배열에 두 배 포함되도록 복사
@@ -31,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="card-front">
               <img src="./images/dog-3389729_640.jpg" alt="카드의 앞면" />
             </div>
-            <divc class="card-back" style="background-color: ${cardColors[i]}"></div>
+            <div class="card-back" style="background-color: ${cardColors[i]}"></div>
           </div>
         </div>
       `;
@@ -66,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   //!모든 카드 요소에 클릭 이벤트 리스너를 추가하는 함수
-  function addCardEventlistener() {
+  function addCardEventListeners() {
     //card 클래스를 가진 모든 요소를 찾아서 변수에 할당
     const cards = document.querySelectorAll("card");
     //cards 배열의 각 카드에 대해 반복문을 실행
