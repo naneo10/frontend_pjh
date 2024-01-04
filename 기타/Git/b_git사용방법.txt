@@ -109,3 +109,9 @@ git push -u origin main
   git commit -m ""
   git pull origin main
   git push origin main
+
+
+  git remote set-url origin https://<user-name>@github.com/<user-name>/<repository-name>.git
+  위의 명령어에서 <user-name> , <repository-name> 을 변경
+  PUSH 시도
+  github 페이지에서 password 입력
