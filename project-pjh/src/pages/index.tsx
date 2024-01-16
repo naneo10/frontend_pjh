@@ -4,6 +4,6 @@ import React from 'react'
 //ex) HomePage.tsx, MyPage.tsx, NoticeBoard.tsx
 export default function Index() {
   return(
-    <div></div>
+    <div>index</div>
   )
 }
