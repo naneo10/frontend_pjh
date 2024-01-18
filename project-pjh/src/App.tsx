@@ -63,7 +63,7 @@ import Home from './pages/home'
 //>>:매개변수
 
 //동적으로 URL 매개변수를 사용하는 컴포넌트
-import User from './pages/user'
+import User from './pages/user';
 
 //!의존성 설치 (필요한 라이브러리 설치)
 //:zustand, json-server, axios
@@ -72,8 +72,9 @@ import User from './pages/user'
 //?1.서버 데이터 파일 생성: json-server 설정
 //프로젝트 루트에 db.json파일 생성
 
-import BookList from "./pages/BookList"
-import BookDetail from "./pages/BookDetail"
+import BookList from "./pages/BookList";
+import BookDetail from "./pages/BookDetail";
+import Login from './pages/cookie/Login';
 
 function App() {
   return (
@@ -105,6 +106,7 @@ function App() {
         <Route path='/book' element={<BookList />} />
         {/* 동적 경로에서 책 상세페이지 표시 */}
         <Route path='/book/:bookId' element={<BookDetail />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
       {/* a화면 - 로그인, 회원가입 */}
 

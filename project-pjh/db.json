@@ -1,6 +1,53 @@
 {
   "books": [
-    { "id": 1, "title": "Book 1", "author": "Author 1", "description": "Description 1" },
-    { "id": 2, "title": "Book 2", "author": "Author 2", "description": "Description 2" }
+    {
+      "id": "1",
+      "title": "Book 1",
+      "author": "Author 1",
+      "description": "Description 1"
+    },
+    {
+      "id": "2",
+      "title": "Book 2",
+      "author": "Author 2",
+      "description": "Description 2"
+    }
+  ],
+  "users": [
+    {
+      "userId": "abc123",
+      "password": "abc123",
+      "id": "dd5a"
+    },
+    {
+      "id": "167d",
+      "userId": "",
+      "password": ""
+    },
+    {
+      "id": "1af5",
+      "userId": "",
+      "password": ""
+    },
+    {
+      "id": "ec46",
+      "userId": "",
+      "password": ""
+    },
+    {
+      "id": "8ce4",
+      "userId": "abc123",
+      "password": "abc123"
+    },
+    {
+      "id": "59cf",
+      "userId": "abc123",
+      "password": "abc123"
+    },
+    {
+      "id": "abb9",
+      "userId": "abc123",
+      "password": "abc123"
+    }
   ]
 }
