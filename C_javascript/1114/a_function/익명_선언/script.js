@@ -7,6 +7,10 @@
 //!1. 익명 함수의 사용
 //:순차적인 코드 실행에서 코드가 해당 줄을 읽을 때 생성
 
+(function() {
+  console.log('Hello');
+});
+
 //변수 선언
 let anonymous;
 
@@ -15,6 +19,9 @@ anonymous = function() {
 }
 anonymous = function() {
   console.log('2번 째 익명 함수입니다.');
+}
+anonymous = function() {
+  console.log('3번 째 익명 함수입니다.');
 }
 
 //익명 함수 호출
