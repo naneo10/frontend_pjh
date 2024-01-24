@@ -54,6 +54,9 @@ export default function Index() {
           <Typography variant='body2' component='p'>Card content</Typography>
         </CardContent>
       </Card>
+      <>
+        
+      </>
     </>
   )
 }
