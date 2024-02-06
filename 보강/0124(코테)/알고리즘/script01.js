@@ -150,7 +150,7 @@ function insertionSortBinarySearch(arr) {
 
     //while
     //:삽입할 위치가 현재 위치보다 앞이라면, 요소들을 뒤로 이동
-    //:key보다 앞에 있는 요소들을 오른쪽으로 한 칸씩 이동, key를 삽입할 위치를 만드는 작업ㄴ
+    //:key보다 앞에 있는 요소들을 오른쪽으로 한 칸씩 이동, key를 삽입할 위치를 만드는 작업
     while(j >= index) {
       arr[j + 1] = arr[j];
       j--;
